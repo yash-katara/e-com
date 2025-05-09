@@ -1,0 +1,119 @@
+{
+  "seller": [
+    {
+      "id": "2c00",
+      "email": "yash@gmail.com",
+      "name": "yash",
+      "password": "123456"
+    },
+    {
+      "id": "22a9",
+      "name": "yash",
+      "email": "anil@user.com",
+      "password": "123456"
+    },
+    {
+      "id": "ccee",
+      "name": "yash",
+      "password": "123456",
+      "email": "sher@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "name": "  Samsung m 40 a ",
+      "price": "54356",
+      "category": "  mobile",
+      "color": "sexy",
+      "description": "  iefhre8ufhwofg",
+      "image": "../assets/images/shopping.webp",
+      "id": "32e5"
+    },
+    {
+      "id": "8af7",
+      "name": "Samsung m 40 a ",
+      "price": "50000",
+      "category": "mobile",
+      "color": "blue",
+      "description": "mrfp",
+      "image": "../assets/images/shopping.webp"
+    },
+    {
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "black",
+      "description": "this is a Samsung product",
+      "image": "../assets/images/shopping.webp",
+      "id": "1"
+    },
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "../assets/images/iphone14.jpg",
+      "id": "2"
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "../assets/images/iphone14.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Truck",
+      "price": "Toy",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "Truck.jpg",
+      "id": "6"
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "../assets/images/noise.webp",
+      "id": "7"
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@user.com",
+      "password": "abc123",
+      "id": "1"
+    },
+    {
+      "name": "peter",
+      "email": "peter@user.com",
+      "password": "abc123",
+      "id": "2"
+    },
+    {
+      "name": "hyden",
+      "email": "hyden@user.com",
+      "password": "abc123",
+      "id": "3"
+    },
+    {
+      "id": "6faf",
+      "name": "yash",
+      "email": "sher@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f43f",
+      "name": "yash",
+      "email": "anil@user.com",
+      "password": "123456"
+    }
+  ]
+}
