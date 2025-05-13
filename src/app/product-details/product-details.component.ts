@@ -12,6 +12,7 @@ export class ProductDetailsComponent implements OnInit {
   productData : undefined| product;
   productQuantity:number =1;
   quantity:number=1;
+  removeCart = false;
   constructor(private activeRoute:ActivatedRoute , private product:ProductService) {}
 ngOnInit(): void {
   let productId = this.activeRoute.snapshot.paramMap.get('productId');
@@ -19,7 +20,20 @@ ngOnInit(): void {
   productId && this.product.getProduct(productId).subscribe((result)=>{
     console.warn(result);
     this.productData= result;
-  })
+
+
+    let cartData = localStorage.getItem('localCart');
+    if(productId && cartData){
+      let items = JSON.parse(cartData);
+ items = items.filter((item:product)=> productId== item.id.toString());
+      if(items.length){
+        this.removeCart = true;
+        console.warn(this.productQuantity);
+      }else{
+        this.removeCart = false;
+      }
+  } 
+ })
  }
 //  handleQuantity(val:string){
 // if(this.productQuantity<20 && val=== 'plus')
@@ -43,7 +57,9 @@ handleQuantity(val: string) {
         console.warn(this.productData);
         this.product.localAddToCart(this.productData);
         console.warn('product added to cart');
-      } else{
+        this.removeCart = true;
+      } 
+      else{
         console.warn('else');
         
       }
@@ -52,6 +68,9 @@ handleQuantity(val: string) {
     }
  }
 
+ removeToCart(productId:number){
+this.product.removeItemfromCart(productId);
+this.removeCart = false;
 }
- 
+}
 
